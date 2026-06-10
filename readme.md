@@ -85,6 +85,7 @@ The pipeline was re-engineered to aggregate raw data into an optimized, multi-di
 | User experience | Isolated charts | Enterprise-grade |
 
 ## 📁 Project Structure
+```text
 NYC-TAXI-ANALYTICS-PROJECT/
 ├── queries/
 │   ├── 00_create_mega_view.sql
@@ -97,7 +98,7 @@ NYC-TAXI-ANALYTICS-PROJECT/
 │   ├── question_7_revenue_optimization.sql
 │   └── question_8_payment_trends.sql
 └── readme.md
-
+```
 
 ### Query Descriptions
 
