@@ -176,6 +176,7 @@ FROM `nyc_taxi_analytics.cleaned_trips_2020_2022` AS trips
 LEFT JOIN `bigquery-public-data.new_york_taxi_trips.taxi_zone_geom` AS zone_lookup
   ON trips.pickup_location_id = zone_lookup.zone_id
 GROUP BY 1, 2, 3, 4, 5, 6, 7;
+```
 ### Key SQL Design Patterns
 
 | Pattern | Implementation | Purpose |
@@ -277,7 +278,7 @@ done
 ### Step 4: Create Master Summary Table
 -- Run the master aggregation query
 bq query --use_legacy_sql=false < queries/00_create_mega_view.sql
-### Step 6: Access Live Dashboard
+### Step 5: Access Live Dashboard
 after connecting the data to looker studio:
 [→ NYC Taxi Analytics Live Dashboard](https://datastudio.google.com/reporting/ef6c2836-3e45-4aef-86d4-94bae1fddd44)
 
