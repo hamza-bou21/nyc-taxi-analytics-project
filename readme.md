@@ -188,7 +188,6 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7;
 
 ## Section 10: Analytics Engineering Patterns
 
-```markdown
 ## 🛠️ Analytics Engineering Design Patterns
 
 ### 1. Pre-Aggregation Defense
@@ -202,7 +201,7 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7;
 SUM(total_revenue) / SUM(total_trips)  // True average
 -- vs
 AVG(total_revenue)  // Potentially misleading
-
+```
 ### 2. Data Transparency Mapping
 
 | Aspect | Description |
@@ -224,7 +223,6 @@ AVG(total_revenue)  // Potentially misleading
 
 ## Section 11: Setup & Deployment
 
-```markdown
 ## 🚀 Setup & Deployment
 
 ### Prerequisites
@@ -242,7 +240,7 @@ Dataset: nyc_taxi_analytics
 Source tables:
   - cleaned_trips_2020_2022
   - bigquery-public-data.new_york_taxi_trips.taxi_zone_geom
-
+```
   ## 🚀 Deployment Steps
 
 ### Prerequisites
@@ -267,7 +265,7 @@ Source tables:
 ```bash
 git clone https://github.com/hamza-bou21/nyc-taxi-analytics-project.git
 cd nyc-taxi-analytics-project
-
+```
 ### Step 2: Create the Base View
 bq query --use_legacy_sql=false < queries/00_create_mega_view.sql
 ### Step 3: Run Analysis Queries
@@ -293,7 +291,6 @@ after connecting the data to looker studio:
 
 ## Section 12: Author & License
 
-```markdown
 ## 👨‍💻 Author
 
 **Hamza Bou** | [GitHub](https://github.com/hamza-bou21)
