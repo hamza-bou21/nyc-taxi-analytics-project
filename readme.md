@@ -184,7 +184,7 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7;
 | **NULL handling** | `IFNULL(borough, 'Unknown')` | Preserves data completeness, prevents missing value gaps |
 | **CASE mapping** | `CASE WHEN dropoff_location_id = '132' THEN 'JFK Airport'` | Converts codes to human-readable labels |
 | **Left join** | `LEFT JOIN zone_lookup ON trips.pickup_location_id = zone_lookup.zone_id` | Enriches trip data while preserving all records |
-
+```
 
 ## Section 10: Analytics Engineering Patterns
 
